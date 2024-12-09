@@ -24,10 +24,10 @@ public class EnterThread extends Thread {
         try {
             int index = 0;
             while(isStop) {
-                if (index == this.mainFrame.nameList.length) {
+                if (index == Constant.NAME_LIST.length) {
                     index = 0;
                 }
-                this.mainFrame.name.setText(mainFrame.nameList[index]);
+                this.mainFrame.name.setText(Constant.NAME_LIST[index]);
                 index++;
 
                 Thread.sleep(time);

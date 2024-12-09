@@ -16,18 +16,18 @@ public class MainFrame extends JFrame implements ActionListener {
     public static boolean flag = false;
 //    public JButton enter = new JButton("确定");
 
-    public JButton enter = new JButton("点名");
-    public JButton exit = new JButton("停止");
-    public JLabel text = new JLabel("点名");
-    public JLabel name = new JLabel("姓名");
+    public JButton enter = new JButton(Constant.ROLL_CALL);
+    public JButton exit = new JButton(Constant.STOP);
+    public JLabel text = new JLabel(Constant.ROLL_CALL);
+    public JLabel name = new JLabel(Constant.NAME);
 
-    public String[] nameList = {"王一","刘二","赵三","周四","马五","龙六","张七","贾八","钟九"};
 
-    public JLabel message = new JLabel("学生总数："+nameList.length);
+
+    public JLabel message = new JLabel(Constant.STUDENT_SUM + Constant.NAME_LIST.length);
     public EnterThread mainThread = null;
 
     public MainFrame() {
-        this.setTitle("点名系统");
+        this.setTitle(Constant.ROLL_CALL_DEVICE);
         this.setSize(230,150);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
@@ -49,7 +49,7 @@ public class MainFrame extends JFrame implements ActionListener {
         enter.setEnabled(true);
         exit.setEnabled(false);
 
-        Font font = new Font("华文楷体",Font.BOLD,22);
+        Font font = new Font(Constant.FONT, Font.BOLD,22);
         this.text.setFont(font);
         this.name.setFont(font);
 
