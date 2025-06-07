@@ -1,10 +1,4 @@
-# 点名器demo
+# 点名器v1.0
 Java GUI 实现的点名器
 
-## 分支说明
 
-名称 | 描述
----|---
-master | 主分支
-demo | demo分支
-develop-1.0 | 点名器开发分支v1.0
