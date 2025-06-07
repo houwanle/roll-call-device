@@ -1,7 +1,13 @@
 # 需要忽略的文件夹
 _book/
 node_modules/
-.idea
+out/
+.idea/
+target/
+
 
 # 需要忽略的文件
-.DS_Store
+*.DS_Store
+*.iml
+*.log
+*.class
